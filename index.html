@@ -4,7 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+
     <title>Hello World</title>
   </head>
-  <body></body>
+  <body class="body-default" data-js="body">
+    <h1>Here will be some pretty cool stuff</h1>
+    <h2 class="h2-header">
+      I will try out what I learned at neuefische on this Site
+    </h2>
+    <form action="">
+      <fieldset class="UserInformation-Fieldset">
+        <legend class="UserInformation-Legend">User Information</legend>
+        <fieldset class="PersonalInformation-Fieldset">
+          <legend class="PersonalInformation-Legend">
+            Personal Information
+          </legend>
+          <ul class="Personalinformation-List">
+            <li>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Michael"
+                minlength="3"
+              />
+            </li>
+            <li>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Smith"
+                minlength="3"
+              />
+            </li>
+            <li>
+              <label for="birthday">Birthday:</label>
+              <input type="date" name="birthday" id="birthday" />
+            </li>
+            <li>
+              <label for="email">E-Mail:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="michaelsmith@gmail.com"
+              />
+            </li>
+            <li>
+              <label for="adress">Adress:</label>
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                placeholder="Berliner Str. 57"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="PersonalPreferences-Fieldset">
+          <legend class="PersonalPreferences-Legend">
+            Personal Preferences
+          </legend>
+          <ul class="PersonalPreferences-List">
+            <li>
+              <label for="favouritecolor">Favourite Color:</label>
+              <input type="color" name="favouritecolor" id="favouritecolor" />
+            </li>
+            <li>
+              <label for="favouriteanimal">Favourite Animal:</label>
+              <select name="favouriteanimal" id="favouriteanimal">
+                <option value="none">--Please select one--</option>
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Rabbit">Rabbit</option>
+                <option value="Rat">Rat</option>
+                <option value="Spider">Spider</option>
+                <option value="Horse">Horse</option>
+                <option value="Wolf">Wolf</option>
+                <option value="Lion">Lion</option>
+              </select>
+            </li>
+            <li>
+              <label for="mostLikedSnack">Most liked Snack:</label>
+              <label for="CHOCLATE">CHOCLATE IS SO YUMMY!!!</label>
+              <input
+                type="radio"
+                name="mostLikedSnack"
+                id="CHOCLATE"
+                value="CHOCLATE"
+              />
+              <label for="ICECREAM">ICE CREAM OVER ALL!!!</label>
+              <input
+                type="radio"
+                name="mostLikedSnack"
+                id="ICECREAM"
+                value="ICECREAM"
+              />
+              <label for="SWEETS">SWEETS ARE MY FAVOURITE!!!</label>
+              <input
+                type="radio"
+                name="mostLikedSnack"
+                id="SWEETS"
+                value="SWEETS"
+              />
+            </li>
+            <li>
+              <label for="hobbies">Your Interest:</label>
+              <label for="playing-an-instrument">Playing an Instrument</label>
+              <input
+                type="checkbox"
+                name="playing-an-instrument"
+                id="playing-an-instrument"
+              />
+              <label for="doing-sports">Doing Sports</label>
+              <input type="checkbox" name="doing-sports" id="doing-sports" />
+              <label for="games">Playing Games</label>
+              <input type="checkbox" name="games" id="games" />
+            </li>
+            <li>
+              <label for="Happieness"
+                >How happy are you with this formular (1-10):</label
+              >
+              <input
+                type="number"
+                name="Happieness"
+                id="Happieness"
+                min="0"
+                max="10"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" data-js="LOL">LOL</button>
+        <button type="button" data-js="LEL">LEL</button>
+        <button type="button" data-js="LAL">LAL</button>
+        <label class="toggle-darmode">
+          <input type="checkbox" />
+          <span class="toggle"></span>
+        </label>
+        <p>RESULT:</p>
+        <p data-js="SHOW-RESULT"></p>
+      </fieldset>
+    </form>
+  </body>
 </html>
